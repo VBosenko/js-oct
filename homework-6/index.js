@@ -117,11 +117,11 @@ for (let i = 0; i < cardSuits.length; i++) {
     }
 }
 
-console.log(cards.filter(value => value.values === 'as').filter(value => value.cardSuits === 'clubs'));
-console.log(cards.filter(value => value.values === '6'));
-console.log(cards.filter(value => value.color = 'red'));
-console.log(cards.filter(value => value.cardSuits = 'diamond'));
-console.log(cards.filter(value => value.cardSuits = 'spade').filter(value => Number(value.values) >= 9));
+// console.log(cards.filter(value => value.values === 'as').filter(value => value.cardSuits === 'clubs'));
+// console.log(cards.filter(value => value.values === '6'));
+// console.log(cards.filter(value => value.color = 'red'));
+// console.log(cards.filter(value => value.cardSuits = 'diamond'));
+console.log(cards.filter(value => value.cardSuits = 'spade').filter(value => Number(value.values) >= 9 || value.values.length > 2));
 
 // Додатково по reduce
 // Взяти описану колоду карт, та за допомоги редюсу попакувати всі карти по "мастях" в об'єкт
